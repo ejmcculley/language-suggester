@@ -9,28 +9,142 @@
 </head>
 <body>
   <div class="container">
-    <div id="header">
-      <h1>Code Creators</h1>
+    <div class="contact-info">
+      <div id="header">
+        <h1>Code Creators</h1>
+      </div>
+      <h2>Interested in more information?</h2>
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" id="first-name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" id="last-name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="email@example.com" id="email">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-dark btn-lg" id="contact-submit">Submit</button>
+      </form>
     </div>
-    <p>Tell us about yourself.</p>
-    <form>
-      <div class="form-row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="First name" id="first-name">
+    <div class="survey">
+      <div class="question-one">
+        <h2>What's your favorite color?</h2>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-success btn-lg" id="q1">Green</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-warning btn-lg" id="q1">Yellow</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-info btn-lg" id="q1">Blue</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-danger btn-lg" id="q1">Red</button>
+          </div>
         </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Last name" id="last-name">
+      <div class="question-two">
+        <h2>If you had to choose one music genre, which would it be?</h2>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-outline-dark btn-lg" id="q2">Rock n Roll</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-outline-dark btn-lg" id="q2">Hip Hop</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-outline-dark btn-lg" id="q2">Jazz</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-outline-dark btn-lg" id="q2">Electronic</button>
+          </div>
         </div>
       </div>
-      <div class="form-row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="email@example.com" id="email">
+      <div class="question-three">
+        <h2>If you had to choose one food type to eat for a whole year, which would it be?</h2>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-dark btn-lg" id="q3">Pizza</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-dark btn-lg" id="q3">Sandwhiches</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-dark btn-lg" id="q3">Ramen</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-dark btn-lg" id="q3">Salad</button>
+          </div>
         </div>
       </div>
-      <button type="submit" class="btn btn-dark btn-lg" id="contact-submit">Submit</button>
-    </form>
-
+      <div class="question-four">
+        <h2>Choose the option that most appeals to you:</h2>
+        <div class="row">
+          <div class="col">
+            <select class="custom-select custom-select-lg mb-2">
+              <option selected>Choose one of the following...</option>
+              <option value="q4-fe">Working with layouts, user interaction, and display</option>
+              <option value="q4-be">Working with data, algorithms, and systems</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="question-five-fe">
+        <h2>Choose the option that most appeals to you:</h2>
+        <div class="row">
+          <div class="col">
+            <select class="custom-select custom-select-lg mb-2">
+              <option selected>Choose one of the following...</option>
+              <option value="q5a-fe">I prefer working with dynamic content and user interfaces </option>
+              <option value="q5b-fe">I prefer working with multi-page enterprise-based web applications</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="question-five-be">
+        <h2>Choose the option that most appeals to you:</h2>
+        <div class="row">
+          <div class="col">
+            <select class="custom-select custom-select-lg mb-2">
+              <option selected>Choose one of the following...</option>
+              <option value="q5a-be">I prefer flexibility and quick innovation</option>
+              <option value="q5b-be">I prefer stability and being very explicit </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="survey-results">
+      <div class="row">
+        <div class="front-end-a" id="fe-a">
+          <h1>We suggest learning React!</h1>
+          <p>Keep in mind that you will learn many languages throughout your career, and notice similarities across languages. Based on your survey results you may want to focus on a front-end developer path that leads to React.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="front-end-b" id="fe-b">
+          <h1>We suggest learning Angular!</h1>
+          <p>Keep in mind that you will learn many languages throughout your career, and notice similarities across languages. Based on your survey results you may want to focus on a front-end developer path that leads to Angular.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="back-end-a" id="be-a">
+          <h1>We suggest learning Ruby!</h1>
+          <p>Keep in mind that you will learn many languages throughout your career, and notice similarities across languages. Based on your survey results you may want to focus on a back-end developer path that leads to Ruby.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="back-end-b" id="be-b">
+          <h1>We suggest learning Python!</h1>
+          <p>Keep in mind that you will learn many languages throughout your career, and notice similarities across languages. Based on your survey results you may want to focus on a back-end developer path that leads to Python.</p>
+        </div>
+      </div>
+    </div>
   </div>
-
 </body>
 </html>
