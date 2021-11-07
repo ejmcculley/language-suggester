@@ -14,7 +14,7 @@
       <p>Welcome to Code Creators! Are you ready to take your first step towards becoming a coder? You'll learn many languages on your journey, but it doesn't hurt to find a good place to start. Take the following survey, then leave your contact information if you want us to follow up with you.</p>
       <button type="button" class="btn btn-dark btn-lg" id="begin">Begin!</button>
     </div>
-    <div class="contact-info">
+    <div id="contact-info">
       <h2>Interested in more information?</h2>
       <form>
         <div class="form-row">
@@ -33,8 +33,8 @@
         <button type="submit" class="btn btn-dark btn-lg" id="contact-submit">Submit</button>
       </form>
     </div>
-    <div class="survey">
-      <div class="question-one">
+    <div id="survey">
+      <div id="question-one">
         <h2>What's your favorite color?</h2>
         <div class="row">
           <div class="col">
@@ -50,7 +50,8 @@
             <button type="button" class="btn btn-danger btn-lg" id="q1">Red</button>
           </div>
         </div>
-      <div class="question-two">
+      </div>
+      <div id="question-two">
         <h2>If you had to choose one music genre, which would it be?</h2>
         <div class="row">
           <div class="col">
@@ -67,14 +68,14 @@
           </div>
         </div>
       </div>
-      <div class="question-three">
+      <div id="question-three">
         <h2>If you had to choose one food type to eat for a whole year, which would it be?</h2>
         <div class="row">
           <div class="col">
             <button type="button" class="btn btn-dark btn-lg" id="q3">Pizza</button>
           </div>
           <div class="col">
-            <button type="button" class="btn btn-dark btn-lg" id="q3">Sandwhiches</button>
+            <button type="button" class="btn btn-dark btn-lg" id="q3">Sandwiches</button>
           </div>
           <div class="col">
             <button type="button" class="btn btn-dark btn-lg" id="q3">Ramen</button>
@@ -84,68 +85,83 @@
           </div>
         </div>
       </div>
-      <div class="question-four">
-        <h2>Choose the option that most appeals to you:</h2>
+      <div id="question-four">
+        <h2>Choose the option that fits you best:</h2>
         <div class="row">
           <div class="col">
-            <select class="custom-select custom-select-lg mb-2">
-              <option selected>Choose one of the following...</option>
-              <option value="q4-fe">Working with layouts, user interaction, and display</option>
-              <option value="q4-be">Working with data, algorithms, and systems</option>
-            </select>
+            <button type="button" class="btn btn-dark btn-lg" id="q4a">Select</button>
+            <h3>I prefer working with layouts, user interaction, and systems</h3>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-dark btn-lg" id="q4b">Select</button>
+            <h3>I prefer working with data, algorithms, and systems</h3>
           </div>
         </div>
       </div>
-      <div class="question-five-fe">
-        <h2>Choose the option that most appeals to you:</h2>
+      <div id="question-five-fe">
+        <h2>Choose the option that fits you best:</h2>
         <div class="row">
           <div class="col">
-            <select class="custom-select custom-select-lg mb-2">
-              <option selected>Choose one of the following...</option>
-              <option value="q5a-fe">I prefer working with dynamic content and user interfaces </option>
-              <option value="q5b-fe">I prefer working with multi-page enterprise-based web applications</option>
-            </select>
+            <button type="button" class="btn btn-dark btn-lg" id="q5-fe-a">Select</button>
+            <h3>I prefer working with dynamic content and user interfaces</h3>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-dark btn-lg" id="q5-fe-b">Select</button>
+            <h3>I prefer working with multi-page enterprise-based web applications</h3>
           </div>
         </div>
       </div>
-      <div class="question-five-be">
-        <h2>Choose the option that most appeals to you:</h2>
+      <div id="question-five-be">
+        <h2>Choose the option that fits you best:</h2>
         <div class="row">
           <div class="col">
-            <select class="custom-select custom-select-lg mb-2">
-              <option selected>Choose one of the following...</option>
-              <option value="q5a-be">I prefer flexibility and quick innovation</option>
-              <option value="q5b-be">I prefer stability and being very explicit </option>
-            </select>
+            <button type="button" class="btn btn-dark btn-lg" id="q5-be-a">Select</button>
+            <h3>I prefer flexibility and quick innovation</h3>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-dark btn-lg" id="q5-be-b">Select</button>
+            <h3>I prefer stability and being very explicit</h3>
           </div>
         </div>
       </div>
     </div>
-    <div class="survey-results">
+    <div id="survey-results">
       <div class="row">
-        <div class="front-end-a" id="fe-a">
+        <div id="front-end-a">
           <h1>We suggest learning React!</h1>
-          <p>Keep in mind that you will learn many languages throughout your career, and notice similarities across languages. Based on your survey results you may want to focus on a front-end developer path that leads to React.</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="front-end-b" id="fe-b">
+        <div id="front-end-b">
           <h1>We suggest learning Angular!</h1>
-          <p>Keep in mind that you will learn many languages throughout your career, and notice similarities across languages. Based on your survey results you may want to focus on a front-end developer path that leads to Angular.</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="back-end-a" id="be-a">
+        <div id="back-end-a">
           <h1>We suggest learning Ruby!</h1>
-          <p>Keep in mind that you will learn many languages throughout your career, and notice similarities across languages. Based on your survey results you may want to focus on a back-end developer path that leads to Ruby.</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="back-end-b" id="be-b">
+        <div id="back-end-b">
           <h1>We suggest learning Python!</h1>
-          <p>Keep in mind that you will learn many languages throughout your career, and notice similarities across languages. Based on your survey results you may want to focus on a back-end developer path that leads to Python.</p>
+        </div>
+          <h4>Keep in mind that you will learn many languages throughout your career, and notice similarities across languages. Based on your survey results you may want to focus on a front-end developer path that leads to React.</h4>
+          <button type="button" class="btn btn-dark btn-lg" id="next">Next</button>
         </div>
       </div>
+    </div>
+    <div id="contact-info">
+      <h2>Interested in more information?</h2>
+      <form>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" id="first-name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" id="last-name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="email@example.com" id="email">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-dark btn-lg" id="contact-submit">Submit</button>
+      </form>
     </div>
   </div>
 </body>

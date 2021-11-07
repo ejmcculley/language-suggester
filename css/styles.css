@@ -1,9 +1,3 @@
-.contact-info {
-  display: none;
-}
-.survey {
-  display: none;
-}
-.survey-results {
+#contact-info, #survey, #survey-results {
   display: none;
 }
