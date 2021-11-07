@@ -64,5 +64,18 @@ $(document).ready(function() {
     $("#survey-results").hide();
     $("#contact-info").show();
   });
+  $("#contact-info").submit(function(event) {
+    event.preventDefault();
+    const firstName = $("input#first-name").val();
+    const lastName = $("input#last-name").val();
+    const emailOne = $("input#email").val();
+
+    $(".firstname1").text(firstName);
+    $(".lastname1").text(lastName);
+    $(".email1").text(emailOne);
+
+    $("#contact-info").hide();
+    $("#follow-up").show();
+  });
 });
 
