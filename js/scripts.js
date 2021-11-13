@@ -1,12 +1,7 @@
 $(document).ready(function() {
   $("button#begin").click(function() {
     $("#survey").show();
-    $("#header").hide();
-    $("#question-two").hide();
-    $("#question-three").hide();
-    $("#question-four").hide();
-    $("#question-five-fe").hide();
-    $("#question-five-be").hide();
+    $("#header, #question-two, #question-three, #question-four, #question-five-fe, #question-five-be").hide();
   });
   $("button#q1").click(function() {
     $("#question-two").show();
@@ -30,35 +25,19 @@ $(document).ready(function() {
   });
   $("button#q5-fe-a").click(function() {
     $("#survey-results").show();
-    $("#front-end-b").hide();
-    $("#back-end-a").hide();
-    $("#back-end-b").hide();
-    $("#question-five-fe").hide();
-    $("#contact-info").hide();
+    $("#front-end-b, #back-end-a, #back-end-b, #question-five-fe, #contact-info").hide();
   });
   $("button#q5-fe-b").click(function() {
     $("#survey-results").show();
-    $("#front-end-a").hide();
-    $("#back-end-a").hide();
-    $("#back-end-b").hide();
-    $("#question-five-fe").hide();
-    $("#contact-info").hide();
+    $("#front-end-a, #back-end-a, #back-end-b, #question-five-fe, #contact-info").hide();
   });
   $("button#q5-be-a").click(function() {
     $("#survey-results").show();
-    $("#front-end-a").hide();
-    $("#front-end-b").hide();
-    $("#back-end-b").hide();
-    $("#question-five-be").hide();
-    $("#contact-info").hide();
+    $("#front-end-a, #front-end-b, #back-end-b, #question-five-be, #contact-info").hide();
   });
   $("button#q5-be-b").click(function() {
     $("#survey-results").show();
-    $("#front-end-a").hide();
-    $("#front-end-b").hide();
-    $("#back-end-a").hide();
-    $("#question-five-be").hide();
-    $("#contact-info").hide();
+    $("#front-end-a, #front-end-b, #back-end-a, #question-five-be, #contact-info").hide();
   });
   $("button#next").click(function() {
     $("#survey-results").hide();
