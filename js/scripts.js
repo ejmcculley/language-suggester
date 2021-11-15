@@ -24,8 +24,9 @@ $(document).ready(function() {
         $("#question-three").hide();
     }
   });
-  $("button#q4").click(function() {
-    let questionFourInput = $("button#q4").val();
+  $("button#q4").click(function(event) {
+    event.preventDefault();
+    let questionFourInput = event.target.value;
     if (questionFourInput === "A") {
       $("#question-five-fe").show();
       $("#question-four").hide();
@@ -34,8 +35,9 @@ $(document).ready(function() {
         $("#question-four").hide();
     }
   });  
-  $("button#q5-fe").click(function() {
-    let questionFeInput = $("button#q5-fe").val();
+  $("button#q5-fe").click(function(event) {
+    event.preventDefault();
+    let questionFeInput = event.target.value;
     if (questionFeInput === "A") {
       $("#survey-results").show();
       $("#front-end-b, #back-end-a, #back-end-b, #question-five-fe, #contact-info").hide();  
@@ -44,8 +46,9 @@ $(document).ready(function() {
       $("#front-end-a, #back-end-a, #back-end-b, #question-five-fe, #contact-info").hide();
     }
   });
-  $("button#q5-be").click(function() {
-    let questionBeInput = $("button#q5-be").val();
+  $("button#q5-be").click(function(event) {
+    event.preventDefault();
+    let questionBeInput = event.target.value;
     if (questionBeInput === "A") {
       $("#survey-results").show();
       $("#front-end-a, #front-end-b, #back-end-b, #question-five-be, #contact-info").hide();

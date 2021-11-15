@@ -38,7 +38,8 @@ _Your second option is to click the Github Pages link below:_
 
 ## Known Bugs
 
-* All paths lead to REACT! The buttons always assign the first option value.
+* Not at the moment!
+
 ## License
 MIT License
 
